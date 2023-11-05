@@ -3,8 +3,8 @@ import { CartService } from '../cart-servis/cart.service';
 
 @Component({
   selector: 'app-orders',
-  templateUrl: './orders.component.html',
-  styleUrls: ['./orders.component.scss']
+  templateUrl: './cart.component.html',
+  styleUrls: ['./cart.component.scss']
 })
 export class OrdersComponent {
   cart: any[] = [];
