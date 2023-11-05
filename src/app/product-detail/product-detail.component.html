@@ -1,0 +1,21 @@
+<div class="container text-center">
+  <div *ngIf="product">
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.description }}</p>
+
+    <div *ngFor="let variant of product.variants">
+      <div class="card mb-3" style="max-width: 600px; margin: 0 auto;">
+        <div class="card-body">
+          <h4>{{ variant.name }}</h4>
+          <p>Price: {{ variant.price | currency:'USD':true:'1.0-0' }}</p>
+          <button type="button" class="btn btn-info" (click)="addToCart(variant)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+

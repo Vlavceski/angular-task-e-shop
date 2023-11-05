@@ -1,0 +1,15 @@
+<div class="container" *ngIf="cart.length > 0">
+    <h2>Orders</h2>
+    <br><br><br>
+    <ul>
+        <li *ngFor="let item of cart">
+            <h3>{{ item.name }}</h3>
+            <p>Price: {{ item.price | currency:'USD':true:'1.0-0' }}</p>
+        </li>
+    </ul>
+    <button  class="btn btn-primary" (click)="clearCart()">Clear Cart</button>
+</div>
+
+<div class="container" *ngIf="cart.length === 0">
+    <h4 style="color: red;">Your cart is empty.</h4>
+</div>

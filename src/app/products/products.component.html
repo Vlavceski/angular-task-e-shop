@@ -1,0 +1,22 @@
+<div class="product-filters container p-3" style="width: 600px;">
+  <label for="sortOptionSelect">Sort By:</label>
+  <select id="sortOptionSelect" class="form-control" [(ngModel)]="selectedSortOption" (change)="applySort()">
+    <option *ngFor="let option of sortOptions" [value]="option">{{ option }}</option>
+  </select>
+  <label for="filterInput">Filter by Name:</label>
+  <input type="text" class="form-control" [(ngModel)]="filterText" (keyup)="applyFilter()" placeholder="Filter by name">
+
+</div>
+
+<div class="product-grid">
+  <div *ngFor="let product of filteredProducts" class="product-card">
+    <a [routerLink]="'/products/' + product.id" style="text-decoration: none;">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.name }}</h5>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
