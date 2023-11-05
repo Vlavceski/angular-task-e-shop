@@ -1,27 +1,22 @@
-# Ecommerce
+# 🚀 Propeller Junior Frontend Assignment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+This frontend assignment's main goal is to test your ability to build a simple test `e-commerce` web application with `Angular` that
+uses the following `GraphQL API`:`https://demo.vendure.io/shop-api`
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Create a product listings page with sorting and filtering
+- Clicking on a product should open a product detail page with additional information
+- Add a button on the product detail page to add the product to the active order
+- Implement a page to view the details of your order
+- Feel free to use any visually appealing styling of your choice (we use Angular Materials)
 
-## Code scaffolding
+## Bonus Points
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- When returning to product listings page, the currently selected sorting and filtering options should be saved and restored (we use NgRx for state management)
+- Unit Tests
+- Be mindful of naming conventions & guides, software development principles and clean code
 
-## Build
+## Submission
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+When you have finished the assignment please submit a link to your repo to the person who sent you this assignment.
